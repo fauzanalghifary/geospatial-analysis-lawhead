@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87b4af85ba03edc3e04c5e2bdc18eacf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87b4af85ba03edc3e04c5e2bdc18eacf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87b4af85ba03edc3e04c5e2bdc18eacf = L.map(
+                "map_87b4af85ba03edc3e04c5e2bdc18eacf",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7bcd415c63aaae40c53413e1b256bbb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a7bcd415c63aaae40c53413e1b256bbb.addTo(map_87b4af85ba03edc3e04c5e2bdc18eacf);
+        
+    
+        function geo_json_7006b120c1e50ec35d4e48e19ecb6907_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "#ffaf00", "weight": 1.5};
+            }
+        }
+
+        function geo_json_7006b120c1e50ec35d4e48e19ecb6907_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_7006b120c1e50ec35d4e48e19ecb6907 = L.geoJson(null, {
+                onEachFeature: geo_json_7006b120c1e50ec35d4e48e19ecb6907_onEachFeature,
+            
+                style: geo_json_7006b120c1e50ec35d4e48e19ecb6907_styler,
+            ...{
+}
+        });
+
+        function geo_json_7006b120c1e50ec35d4e48e19ecb6907_add (data) {
+            geo_json_7006b120c1e50ec35d4e48e19ecb6907
+                .addData(data);
+        }
+            geo_json_7006b120c1e50ec35d4e48e19ecb6907_add({"features": [{"geometry": {"coordinates": [0, 0], "type": "Point"}, "id": "0", "properties": {"COMMENT": "asas", "DATE": "2025-06-16", "NAME": "Aguascalientes"}, "type": "Feature"}, {"geometry": {"coordinates": [0, 0], "type": "Point"}, "id": "1", "properties": {"COMMENT": "asas", "DATE": "2025-06-16", "NAME": "Aguascalientes,Ags"}, "type": "Feature"}, {"geometry": {"coordinates": [0, 0], "type": "Point"}, "id": "2", "properties": {"COMMENT": "try", "DATE": "2025-08-17", "NAME": "omdena"}, "type": "Feature"}, {"geometry": {"coordinates": [0, 0], "type": "Point"}, "id": "3", "properties": {"COMMENT": "try", "DATE": "2025-08-17", "NAME": "omdena"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_7006b120c1e50ec35d4e48e19ecb6907.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["NAME", "DATE", "COMMENT"];
+    let aliases = ["NAME", "DATE", "COMMENT"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_7006b120c1e50ec35d4e48e19ecb6907.addTo(map_87b4af85ba03edc3e04c5e2bdc18eacf);
+        
+    
+            map_87b4af85ba03edc3e04c5e2bdc18eacf.fitBounds(
+                [[0, 0], [0, 0], [0, 0], [0, 0]],
+                {}
+            );
+        
+</script>
+</html>
